@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        @media only screen and (max-width: 600px) {
+        body {
+            background-color: black;
+        }
+        }
+        #myform{
+            margin-top: 150px;
+            margin-right: 300px;
+            margin-left: 300px;
+            margin-bottom: 150px;
+        }
+        #topic{
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            background-color: #a2a8d3;
+            text-align: center;
+            font-size: 24px;
+        }
+        #subtopic{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: black;
+            text-align: center;
+            font-size: 18px;
+        }
+        #fname, #email, #age, #nationality, #dev, #qual, #des{
+            color: white;
+
+        }
+        #name, #email, #age, #nationality{
+            text-align: center;
+        }
+        #devd, #quald, #desd{
+            text-align: center;
+        }
+        #dev{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div id="myform">
+        <div id="topic">DEVELOPERS SURVEY FORM</div>
+        <div id="subtopic">Thank you for taking the time to help us know the about world wide developers</div>
+        <form action="">
+            <div id="name">
+                <label for="fname" id="fname">Name:-</label>
+                <input type="text" id="fnamet" name="fname" placeholder="Name"><br><br>
+            </div> 
+            <div id="email">
+                <label for="email" id="email">E-mail:-</label>
+                <input type="text" id="emailt" name="email" placeholder="E-mail"><br><br>
+            </div>    
+            <div id="age">
+                <label for="age" id="age">Age:-</label>
+                <input type="text" id="aget" name="age" placeholder="Age"><br><br>
+            </div> 
+             <div id="nationality">
+                <label for="nationality" id="nationality">Nationality:-</label>
+                <select name="cars" id="cars">
+                    <option value="volvo">Indian</option>
+                    <option value="saab">Sri Lankan</option>
+                    <option value="mercedes">Japaneese</option>
+                  </select>
+             </div>
+             <div id="devd">
+                <label for="dev" id="dev">Developer:-</label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio" checked>Frontend
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio">Backend
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio">Fullstack
+                </label>
+             </div>
+             <div id="quald">
+                <label for="qual" id="qual">Qualification:-</label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="">10+2
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" value="">Graduation
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" value="">Degree
+                  </label>
+             </div>
+             <div id="desd">
+                <label for="des" id="des">Describe about you:-</label>
+                <textarea id="des" name="des"></textarea>
+            </div> 
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
